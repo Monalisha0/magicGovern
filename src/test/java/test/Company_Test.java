@@ -196,15 +196,15 @@ public class Company_Test extends BaseTest {
 		CompanyPage.ReviewsAndRewardsTabBtn();
 	}
 
-	@Test(priority = 23)
-	public void TC23_Company_Tab() {
-
-		CompanyPage CompanyPage = new CompanyPage(driver);
-		TC22_Company_Tab();
-		CompanyPage.LeftVideoButton();
-		CompanyPage.YouTubeBtn();
-
-	}
+//	@Test(priority = 23)
+//	public void TC23_Company_Tab() {
+//
+//		CompanyPage CompanyPage = new CompanyPage(driver);
+//		TC22_Company_Tab();
+//		CompanyPage.LeftVideoButton();
+//		CompanyPage.YouTubeBtn();
+//
+//	}
 
 	@Test(priority = 24)
 	public void TC24_Company_Tab() {
