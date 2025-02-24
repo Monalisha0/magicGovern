@@ -3,9 +3,9 @@
 <suite name="Suite">
 	<test thread-count="21" name="Test">
 		<classes>
-			<class name ="test.HomePageTabTest"/>
-			<!-- <class name="test.Company_Test" />
 			<class name ="test.ResourceTabTest"/>
+			<!-- <class name="test.Company_Test" />
+			<class name ="test.HomePageTabTest"/>
 			<class name ="test.BlogPage"/>
 			<class name="test.IndustryTest" />
 			<class name="test.SolutionTab_Test" />
