@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -132,6 +133,23 @@ public class Interactions {
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null; // Return null in case of any exception
+		}
+	}
+
+	public void enterText(By element, String text) throws InterruptedException {
+
+		for (int attempts = 0; attempts < 3; attempts++) {
+			try {
+				Thread.sleep(2000);
+				WebElement inputField = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+				inputField.sendKeys(text);
+
+				// Break the loop if no exception is thrown
+				break;
+			} catch (StaleElementReferenceException e) {
+				// Retry locating and interacting with the element
+				System.out.println("StaleElementReferenceException on Enter Text encountered. Retrying...");
+			}
 		}
 	}
 

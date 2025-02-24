@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\MonalishaRabha\AppData\Local\Temp\testng-eclipse--1404184140\testng-customsuite.xml</span>
+                    <span>C:\Users\MonalishaRabha\AppData\Local\Temp\testng-eclipse-546806368\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="test.Company_Test" class="method navigator-link" hash-for-method="TC23_Company_Tab">TC23_Company_Tab</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.HomePageTabTest" class="method navigator-link" hash-for-method="TC_02_Homepage_Tab">TC_02_Homepage_Tab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,25 +118,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.Company_Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">test.HomePageTabTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC23_Company_Tab">
-                  </a> <!-- TC23_Company_Tab -->
-                  <span class="method-name">TC23_Company_Tab</span>
+                  <a name="TC_02_Homepage_Tab">
+                  </a> <!-- TC_02_Homepage_Tab -->
+                  <span class="method-name">TC_02_Homepage_Tab</span>
+                  <div class="stack-trace">java.lang.AssertionError: The URL did not match! expected [https://www.magicgovern.ai/solutions/] but found [https://www.magicgovern.ai/#]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at pages.HomePageTabPage.verifyLink(HomePageTabPage.java:79)
+	at test.HomePageTabTest.TC_02_Homepage_Tab(HomePageTabTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\MonalishaRabha\AppData\Local\Temp\testng-eclipse--1404184140\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\MonalishaRabha\AppData\Local\Temp\testng-eclipse-546806368\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +181,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.Company_Test&quot;&gt;
+      &lt;class name=&quot;test.HomePageTabTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TC23_Company_Tab&quot;/&gt;
+          &lt;include name=&quot;TC_02_Homepage_Tab&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.Company_Test --&gt;
+      &lt;/class&gt; &lt;!-- test.HomePageTabTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -191,14 +227,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC23_Company_Tab')
-data.setCell(0, 2, 'test.Company_Test')
-data.setCell(0, 3, 7924);
+data.setCell(0, 1, 'TC_02_Homepage_Tab')
+data.setCell(0, 2, 'test.HomePageTabTest')
+data.setCell(0, 3, 60691);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,57 +249,65 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">23 ignored methods</span>
+            <span class="header-content">27 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">test.Company_Test</span>
+              <span class="ignored-class-name">test.HomePageTabTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC09_Company_Tab</span>
+                <span class="ignored-method-name">TC_03_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC11_Company_Tab</span>
+                <span class="ignored-method-name">TC_16_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC16_Company_Tab</span>
+                <span class="ignored-method-name">TC_24_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC04_Company_Tab</span>
+                <span class="ignored-method-name">TC_20_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC06_Company_Tab</span>
+                <span class="ignored-method-name">TC_23_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC13_Company_Tab</span>
+                <span class="ignored-method-name">TC_04_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC14_Company_Tab</span>
+                <span class="ignored-method-name">TC_21_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC05_Company_Tab</span>
+                <span class="ignored-method-name">TC_19_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC15_Company_Tab</span>
+                <span class="ignored-method-name">TC_01_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC08_Company_Tab</span>
+                <span class="ignored-method-name">TC_25_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC24_Company_Tab</span>
+                <span class="ignored-method-name">TC_12_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC10_Company_Tab</span>
+                <span class="ignored-method-name">TC_27_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC07_Company_Tab</span>
+                <span class="ignored-method-name">TC_11_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC12_Company_Tab</span>
+                <span class="ignored-method-name">TC_15_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC03_Company_Tab</span>
+                <span class="ignored-method-name">TC_09_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC18_Company_Tab</span>
+                <span class="ignored-method-name">TC_07_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC01_Company_Tab</span>
+                <span class="ignored-method-name">TC_28_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC02_Company_Tab</span>
+                <span class="ignored-method-name">TC_18_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC17_Company_Tab</span>
+                <span class="ignored-method-name">TC_10_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC20_Company_Tab</span>
+                <span class="ignored-method-name">TC_17_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC22_Company_Tab</span>
+                <span class="ignored-method-name">TC_06_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC19_Company_Tab</span>
+                <span class="ignored-method-name">TC_22_Homepage_Tab</span>
                 <br/>
-                <span class="ignored-method-name">TC21_Company_Tab</span>
+                <span class="ignored-method-name">TC_14_Homepage_Tab</span>
+                <br/>
+                <span class="ignored-method-name">TC_26_Homepage_Tab</span>
+                <br/>
+                <span class="ignored-method-name">TC_05_Homepage_Tab</span>
+                <br/>
+                <span class="ignored-method-name">TC_13_Homepage_Tab</span>
+                <br/>
+                <span class="ignored-method-name">TC_08_Homepage_Tab</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -275,18 +319,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.Company_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.HomePageTabTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC23_Company_Tab</span>
-                <span class="method-start">28539 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_02_Homepage_Tab</span>
+                <span class="method-start">5619 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">36474 ms</span>
+                <span class="method-start">66313 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
