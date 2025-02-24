@@ -1,11 +1,9 @@
 package test;
 
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import helper.BaseTest;
-import pages.IndustryPage;
 import pages.SolutionTab;
 
 public class SolutionTab_Test extends BaseTest {
