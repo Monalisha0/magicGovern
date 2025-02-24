@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test thread-count="21" name="Test">
 		<classes>
-			<class name ="test.HomePageTabPage"/>
+			<class name ="test.HomePageTabTest"/>
 			<!-- <class name="test.Company_Test" />
 			<class name ="test.ResourceTabTest"/>
 			<class name ="test.BlogPage"/>
