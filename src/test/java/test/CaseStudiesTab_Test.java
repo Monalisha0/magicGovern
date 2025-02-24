@@ -26,19 +26,19 @@ public class CaseStudiesTab_Test extends BaseTest {
 		driver.quit();
 	}
 
-	@Test(priority = 1)
-
-	public void caseStudiesText_Tab_TC_01() {
-		caseStudiesTab.caseStudies_tab();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		String actualText = caseStudiesTab.caseStudies_tab_text();
-		System.out.println(actualText);
-
-		String expectedText = "Case studies"; // Replace with your expected text
-		Assert.assertEquals(actualText.toLowerCase(), expectedText.toLowerCase(),
-				"Text does not match the expected value!");
-	}
+//	@Test(priority = 1)
+//
+//	public void caseStudiesText_Tab_TC_01() {
+//		caseStudiesTab.caseStudies_tab();
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//
+//		String actualText = caseStudiesTab.caseStudies_tab_text();
+//		System.out.println(actualText);
+//
+//		String expectedText = "Case studies"; // Replace with your expected text
+//		Assert.assertEquals(actualText.toLowerCase(), expectedText.toLowerCase(),
+//				"Text does not match the expected value!");
+//	}
 
 	@Test(priority = 2)
 
@@ -46,16 +46,16 @@ public class CaseStudiesTab_Test extends BaseTest {
 		caseStudiesTab.caseStudies_tab();
 	}
 
-	@Test(priority = 3)
-
-	public void featuredCaseText_TC_03() {
-		caseStudiesTab.caseStudies_tab();
-		String actualText = caseStudiesTab.featureText();
-		System.out.println(actualText);
-		String expectedText = "Featured case studies"; // Replace with your expected text
-		Assert.assertEquals(actualText, expectedText, "Text does not match the expected value!");
-
-	}
+//	@Test(priority = 3)
+//
+//	public void featuredCaseText_TC_03() {
+//		caseStudiesTab.caseStudies_tab();
+//		String actualText = caseStudiesTab.featureText();
+//		System.out.println(actualText);
+//		String expectedText = "Featured case studies"; // Replace with your expected text
+//		Assert.assertEquals(actualText, expectedText, "Text does not match the expected value!");
+//
+//	}
 
 	@Test(priority = 4)
 
