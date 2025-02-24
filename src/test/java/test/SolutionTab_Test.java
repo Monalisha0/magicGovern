@@ -5,11 +5,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import helper.BaseTest;
-
+import pages.IndustryPage;
 import pages.SolutionTab;
 
 public class SolutionTab_Test extends BaseTest {
-	private SolutionTab solutionTab;
+//	private SolutionTab solutionTab;
 
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
@@ -17,15 +17,22 @@ public class SolutionTab_Test extends BaseTest {
 		driver.quit();
 	}
 
+//	@BeforeMethod
+//	public void setUp() {
+//		solutionTab = new SolutionTab(driver);
+//	}
+
 	@Test(priority = 1)
 
 	public void solution_Tab_TC_01() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 	}
 
 	@Test(priority = 2)
 
 	public void Managed_services_TC_02() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.managedServices();
 
@@ -34,6 +41,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 3)
 
 	public void IT_ConsultancyAndAdvisoy_TC_03() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.itConsultancy();
 
@@ -42,6 +50,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 4)
 
 	public void CyberSecurity_TC_04() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.cyberSecurity();
 
@@ -50,6 +59,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 5)
 
 	public void WebDevelopment_TC_05() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.webDevelopment();
 
@@ -58,6 +68,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 6)
 
 	public void MobileDevelopment_TC_06() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.mobileDevelopment();
 
@@ -66,6 +77,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 7)
 
 	public void CloudServices_TC_07() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.cloudeServices();
 
@@ -74,6 +86,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 8)
 
 	public void DigitalTransformation_TC_08() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.digitalTransformation();
 
@@ -83,6 +96,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 9)
 
 	public void Security_TC_09() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.security();
 
@@ -91,6 +105,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 10)
 
 	public void Automation_TC_10() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.automation();
 
@@ -99,24 +114,25 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 11)
 
 	public void Gaining_Efficiency_TC_11() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.gainingEfficiency();
 
 	}
 
-//
 	@Test(priority = 12)
 
 	public void Industry_Manufacturing_12() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.industryManufacturing();
 
 	}
 
-//
 	@Test(priority = 13)
 
 	public void Transportation_TC_13() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.transportion();
 
@@ -126,6 +142,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 14)
 
 	public void Healthcare_TC_14() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.healthCare();
 
@@ -134,6 +151,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 15)
 
 	public void BankAndInsurance_TC_15() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.banksAndInsurance();
 
@@ -142,15 +160,16 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 16)
 
 	public void CounsultingProvider_TC_16() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.counsultingProvider();
 
 	}
 
-//
 	@Test(priority = 17)
 
 	public void NonProfit_TC_17() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.nonProfit();
 
@@ -159,6 +178,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 18)
 
 	public void NonProfit_TC_18() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab();
 		solutionTab.viewAll();
 	}
@@ -166,6 +186,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 19)
 
 	public void CallUs_TC_19() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab_btn();
 		solutionTab.callUs();
 	}
@@ -173,6 +194,7 @@ public class SolutionTab_Test extends BaseTest {
 	@Test(priority = 20)
 
 	public void nftLearnMore_TC_20() {
+		SolutionTab solutionTab = new SolutionTab(driver);
 		solutionTab.solution_tab_btn();
 		solutionTab.nftLearnMore();
 	}
