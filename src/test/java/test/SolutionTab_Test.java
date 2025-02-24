@@ -17,11 +17,6 @@ public class SolutionTab_Test extends BaseTest {
 		driver.quit();
 	}
 
-	@BeforeMethod
-	public void setUp() {
-		solutionTab = new SolutionTab(driver);
-	}
-
 	@Test(priority = 1)
 
 	public void solution_Tab_TC_01() {
